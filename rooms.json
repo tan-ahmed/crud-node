@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Studio | 12 Months | All Bills Included",
+    "city": "London",
+    "price": 1456,
+    "description": "Lorem ipsum dolor sit amet. Est voluptate voluptatem ut sequi voluptatem quo voluptatem cumque qui nobis accusamus ut molestiae eum dicta quisquam ut nobis adipisci.",
+    "amenities": {
+      "parking": true,
+      "garden": true,
+      "balcony": false
+    }
+  },
+  {
+    "name": "Lovely Cosy Double In Aldgate -E1 All Incl",
+    "city": "London",
+    "price": 666,
+    "description": "Lorem ipsum dolor sit amet. Est voluptate voluptatem ut sequi voluptatem quo voluptatem cumque qui nobis accusamus ut molestiae eum dicta quisquam ut nobis adipisci.",
+    "amenities": {
+      "parking": false,
+      "garden": true,
+      "balcony": false
+    }
+  },
+  {
+    "name": "Large bright room in beautiful maisonette",
+    "city": "London",
+    "price": 750,
+    "description": "Lorem ipsum dolor sit amet. Est voluptate voluptatem ut sequi voluptatem quo voluptatem cumque qui nobis accusamus ut molestiae eum dicta quisquam ut nobis adipisci.",
+    "amenities": {
+      "parking": false,
+      "garden": false,
+      "balcony": false
+    }
+  },
+  {
+    "name": "Massive&Stylish Room in birmingham",
+    "city": "Birmingham",
+    "price": 999,
+    "description": "Lorem ipsum dolor sit amet. Est voluptate voluptatem ut sequi voluptatem quo voluptatem cumque qui nobis accusamus ut molestiae eum dicta quisquam ut nobis adipisci.",
+    "amenities": {
+      "parking": true,
+      "garden": true,
+      "balcony": true
+    }
+  }
+]
