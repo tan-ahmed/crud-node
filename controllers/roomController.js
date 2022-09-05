@@ -1,9 +1,6 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../models/index").sequelize;
-
 const Room = require("../models/room-model")(sequelize, Sequelize.DataTypes);
-// const Rooms = db.Room;
-// const Op = db.Sequelize.Op;
 
 const addRoom = async (req, response) => {
   try {
@@ -15,9 +12,6 @@ const addRoom = async (req, response) => {
       parking: req.body.parking,
       garden: req.body.garden,
     };
-
-    // const room = await Room.create(roomObj);
-    // console.log("room", room);
 
     await Room.create(roomObj);
 
@@ -31,7 +25,16 @@ const addRoom = async (req, response) => {
 };
 
 const getRoom = async (req, res) => {
-  console.log("get room", req.params.id);
+  const id = req.params.id;
+  console.log(req.params.id, "req.params.id");
+  try {
+    const result = await Room.findOne({ where: { id: id } });
+    res.json(result);
+  } catch (error) {
+    console.error("SEARCH ROOMS", error);
+    response.status(500);
+    response.send(error);
+  }
 };
 
 const searchRooms = async (req, res) => {
